@@ -2,10 +2,10 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"  ng-app="SatApp"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>SAT</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -17,9 +17,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- own css -->
     <link rel="stylesheet" href="styles/sat.css">
-    <!-- endbuild -->
   </head>
-  <body ng-app="testAngularApp">
+  <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -66,12 +65,18 @@
     <!-- endbower -->
 
     <!-- endbuild -->
-
+       
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+
+        <script src="scripts/factories/accountFactory.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
         <!-- Own scripts -->
         <script src="scripts/controllers/loginCtrl.js"></script>
+
+        <script src="scripts/services/loginService.js"></script>
+
+       
 </body>
 </html>
