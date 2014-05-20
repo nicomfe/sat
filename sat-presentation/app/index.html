@@ -23,9 +23,19 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div class="header" ng-controller="MainCtrl" >
+      <ul class="nav nav-pills pull-right">
+        <li><a ng-href="#">Home</a></li>
+        <li ng-hide="isLogged" ><a ng-href="#/login">Login</a></li>
+        <li ><a ng-show="isLogged" ng-click="logout()">Logout</a></li>
+      </ul>
+      <h3 class="text-muted">SAT</h3>
+    </div>
     <!-- Add your site or application content here -->
     <div class="container" ng-view=""></div>
-
+    <div class="footer">
+      <p><span class="glyphicon glyphicon-flash"></span>-- SAT --<span class="glyphicon glyphicon-flash"></span></p>
+    </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -74,6 +84,7 @@
         <!-- endbuild -->
         <!-- Own scripts -->
         <script src="scripts/controllers/loginCtrl.js"></script>
+        <script src="scripts/controllers/userCtrl.js"></script>
 
         <script src="scripts/services/loginService.js"></script>
 

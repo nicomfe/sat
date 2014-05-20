@@ -3,11 +3,12 @@
 SatApp.service('loginService', function($http){
 
 	var login = function(_userName, _password){
+		// TODO call rest service
 		return true;
 	};
 
 	var logout = function(){
-		return true;
+		$rootScope.logout();
 	};
 
 	return{

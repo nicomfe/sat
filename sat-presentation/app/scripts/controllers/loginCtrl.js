@@ -17,7 +17,7 @@ SatApp.controller('LoginCtrl', function($scope, $location, $rootScope, accountFa
 	    	$rootScope.setUserNameLoggedIn($scope.userName);
 	    	$scope.accountFactory.userName = $scope.userName;
 	    	$rootScope.login();
-	        $location.path('/');
+	        $location.path('/my_teams');
 	    }else{
 	    	$scope.loginFailed = true;
 	    }

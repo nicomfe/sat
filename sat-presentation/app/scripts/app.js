@@ -15,6 +15,14 @@ SatApp.config(function ($routeProvider) {
         templateUrl: '/views/login.html',
         controller: 'LoginCtrl'
       })
+      .when('/my_teams', {
+        templateUrl: '/views/user/my_teams.html',
+        controller: 'UserCtrl'
+      })
+      .when('/my_details', {
+        templateUrl: '/views/user/my_details.html',
+        controller: 'UserCtrl'
+      })
       .when('/', {
         templateUrl: '/views/main.html',
         controller: 'MainCtrl'
