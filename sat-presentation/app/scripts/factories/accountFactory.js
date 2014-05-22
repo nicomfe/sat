@@ -4,5 +4,5 @@ SatApp.factory('accountFactory', function(){
 	
 	return {
 		userName: null
-	}
+	};
 });

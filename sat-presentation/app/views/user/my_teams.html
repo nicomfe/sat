@@ -1,5 +1,19 @@
 
 <div ng-include src="'views/partials/user/user_console.html'"></div> 
 <div class="jumbotron" data-ng-init="updateVar(false)">
-	These are my teams!
+	<div>
+		<table  >
+            <tr data-ng-repeat="team in teamFactory.userTeams">
+              <td style="width: 40%;">
+                <p><span data-ng-bind="team.teamId"></span></p>
+              </td>
+              <td style="width: 40%;">
+                <p><span data-ng-bind="team.teamName"></span></p>
+              </td>
+            </tr>
+            <tr data-ng-show="teamFactory.userTeams.length == 0">
+              <td>Todavia no tenes equipos!</td>
+            </tr>
+          </table>  	
+	</div>
 </div>

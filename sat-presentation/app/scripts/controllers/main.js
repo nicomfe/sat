@@ -5,7 +5,7 @@ SatApp.controller('MainCtrl', function ($scope, $rootScope) {
 	$scope.userName = $rootScope.getUserNameLoggedIn();
 	
 	$scope.logout = function(){
-		 $rootScope.logout();
+		$rootScope.logout();
 	};
 
 	$scope.loggedIn = function(){

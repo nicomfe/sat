@@ -1,5 +1,9 @@
 
 <div ng-include src="'views/partials/user/user_console.html'"></div> 
 <div class="jumbotron">
-	These are my details!
+	<ul>
+		<li>Nombre: {{userFactory.user.name}}</li>
+		<li>Apellido: {{userFactory.user.surname}}</li>
+		<li>Apodo: {{userFactory.user.nickname}}</li>
+	</ul>
 </div>

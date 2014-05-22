@@ -1,6 +1,6 @@
 'use strict';
 
-SatApp.service('loginService', function($http){
+SatApp.service('loginService', function($rootScope){
 
 	var login = function(_userName, _password){
 		// TODO call rest service
