@@ -17,11 +17,13 @@ SatApp.config(function ($routeProvider) {
       })
       .when('/my_teams', {
         templateUrl: '/views/user/my_teams.html',
-        controller: 'UserCtrl'
+        controller: 'UserCtrl',
+        secure: true
       })
       .when('/my_details', {
         templateUrl: '/views/user/my_details.html',
-        controller: 'UserCtrl'
+        controller: 'UserCtrl',
+        secure: true
       })
       .when('/', {
         templateUrl: '/views/main.html',
@@ -63,6 +65,7 @@ SatApp.run(function($rootScope, $cookieStore, $route, $window,$location, loginSe
     };
 
     $rootScope.$on('$routeChangeStart', function(angularEvent, next, current) {
+
         if (!$cookieStore.get('isLoggedIn') && next.secure) {
             // they are not currently logged in and the page they're trying to get to is a secured page
             // -> redirect them to the login page, keep track of where they were trying to get to
