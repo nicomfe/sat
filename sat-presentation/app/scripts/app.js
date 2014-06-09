@@ -90,5 +90,7 @@ SatApp.run(function($rootScope, $cookieStore, $route, $window,$location, loginSe
 
     $rootScope.error = null;
   });
+
+
 });
 

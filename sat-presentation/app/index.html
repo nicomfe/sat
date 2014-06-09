@@ -13,10 +13,21 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
+    <!-- imported -->
+    <link href="styles/imported/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/imported/style.css" rel="stylesheet">
+
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+
     <!-- own css -->
     <link rel="stylesheet" href="styles/sat.css">
+
+    <!-- Fav and touch icons -->
+
+    <script type="text/javascript" src="scripts/imported/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/imported/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/imported/scripts.js"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -25,21 +36,11 @@
 
     
     <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
-    <div class="footer">
-      <p><span class="glyphicon glyphicon-flash"></span>-- SAT --<span class="glyphicon glyphicon-flash"></span></p>
-    </div>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ <div class="container" ng-view="">
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+</div>
 
+   
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
@@ -81,7 +82,7 @@
         <!-- Own scripts -->
         <script src="scripts/controllers/loginCtrl.js"></script>
         <script src="scripts/controllers/userCtrl.js"></script>
-
+         <script src="scripts/controllers/myTeamsCtrl.js"></script>
         <script src="scripts/services/loginService.js"></script>
         <script src="scripts/services/userConsoleService.js"></script>
        
