@@ -1,5 +1,24 @@
+@font-face {
+    font-family: titleFont;
+    src: url(../fonts/titleFont.TTF);
+}
+
 body {
-	background: #eee !important;	
+	background: #fff !important;	
+}
+
+.jumbotron{
+	margin-bottom: 1px;
+}
+
+.container{
+	width:100% !important;
+	margin-right: 0px !important;
+	color:white;
+
+}
+h1{
+	font-family: titleFont !important;
 }
 
 .wrapper {	
@@ -46,4 +65,70 @@ body {
 	  border-top-left-radius: 0;
 	  border-top-right-radius: 0;
 	}
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* additional sections */
+#firstHomeSection {
+  background: url(../images/main1.jpg) no-repeat center center fixed; 
+  display: table;
+   min-height:40em; 
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#secondMainSection {
+  background: url(../images/main2.jpg) no-repeat center center fixed; 
+  display: table;
+  min-height:40em; 
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#thirdMainSection {
+  background: url(../images/main3.jpg) no-repeat center center fixed; 
+  display: table;
+   min-height:40em; 
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#footer {
+  background: #101010;
+	width:100%;
 }

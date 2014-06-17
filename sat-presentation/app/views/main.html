@@ -1,101 +1,88 @@
 <div ng-include src="'views/partials/homeHeader.html'"></div> 
-<!-- <div class="jumbotron">
-  <h1>Bienvenido <span>{{userName}}</span>! </h1>
-  <p class="lead">
-    Administra tu equipo, busca rivales y mas!
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Me gusta!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div> -->
 
 <div class="row clearfix">
-		<div class="col-md-12 column">
+		<div class="col-md-14 column">
 			
-			<div class="jumbotron">
+			<div id="firstHomeSection" class="home row jumbotron">
 				<h1>
-					Hello, world!
+					OBTENE TURNOS GRATIS, ARMA TU EQUIPO, BUSCA JUGADORES Y MAS!
 				</h1>
 				<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+					<iframe src="//player.vimeo.com/video/59362697" width="1000" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</p>
 				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+					<a class="btn btn-primary btn-large" href="#">Registrate GRATIS</a>
 				</p>
 			</div>
-			<div class="row clearfix">
+			<div id="secondMainSection" class="row jumbotron clearfix " >
 				<div class="col-md-12 column">
+					<h1>REGISTRARSE ES GRATIS!</h1>
 					<form role="form">
-						<div class="form-group">
-							 <label for="exampleInputEmail1">Email address</label><input type="email" class="form-control" id="exampleInputEmail1">
+						<div class="form-group input-group-lg">
+							 <input type="email" class="form-control" placeholder="Email" id="exampleInputEmail1">
 						</div>
-						<div class="form-group">
-							 <label for="exampleInputPassword1">Password</label><input type="password" class="form-control" id="exampleInputPassword1">
+						<div class="form-group input-group-lg">
+							 <input type="password" class="form-control"  placeholder="Contraseña" id="exampleInputPassword1">
+						</div>
+						<div class="form-group input-group-lg">
+							 <input type="password" class="form-control"  placeholder="Repetir Contraseña" id="exampleInputPassword2">
 						</div>
 					</form>
 					<div class="row clearfix">
 						<div class="col-md-12 column">
-							 <button type="button" class="btn btn-lg btn-success btn-block">Default</button>
+							 <button type="button" class="btn btn-lg btn-success btn-block">OK</button>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row clearfix">
+			<div id="thirdMainSection"  class="row jumbotron clearfix " >
+				<!-- third section - Services -->
 				<div class="col-md-12 column">
-					<div class="carousel slide" id="carousel-682305">
-						<ol class="carousel-indicators">
-							<li class="active" data-slide-to="0" data-target="#carousel-682305">
-							</li>
-							<li data-slide-to="1" data-target="#carousel-682305">
-							</li>
-							<li data-slide-to="2" data-target="#carousel-682305">
-							</li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="item active">
-								<img alt="" src="http://lorempixel.com/1600/500/sports/1">
-								<div class="carousel-caption">
-									<h4>
-										First Thumbnail label
-									</h4>
-									<p>
-										Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-									</p>
-								</div>
-							</div>
-							<div class="item">
-								<img alt="" src="http://lorempixel.com/1600/500/sports/2">
-								<div class="carousel-caption">
-									<h4>
-										Second Thumbnail label
-									</h4>
-									<p>
-										Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-									</p>
-								</div>
-							</div>
-							<div class="item">
-								<img alt="" src="http://lorempixel.com/1600/500/sports/3">
-								<div class="carousel-caption">
-									<h4>
-										Third Thumbnail label
-									</h4>
-									<p>
-										Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-									</p>
-								</div>
-							</div>
-						</div> <a class="left carousel-control" href="#carousel-682305" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-682305" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-					</div>
+				<h1>NUESTROS SERVICIOS</h1> <hr />
+				<div id="services" class="pad-section">
+				    <div class="row text-center">
+				      <div class="col-sm-3 col-xs-6">
+				        <i class="glyphicon glyphicon-cloud"> </i>
+				        <h4>Service 1</h4>
+				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+				      </div>
+				      <div class="col-sm-3 col-xs-6">
+				        <i class="glyphicon glyphicon-leaf"> </i>
+				        <h4>Service 2</h4>
+				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+				      </div>
+				      <div class="col-sm-3 col-xs-6">
+				        <i class="glyphicon glyphicon-phone-alt"> </i>
+				        <h4>Service 3</h4>
+				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+				      </div>
+				      <div class="col-sm-3 col-xs-6">
+				        <i class="glyphicon glyphicon-bullhorn"> </i>
+				        <h4>Service 4</h4>
+				        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet. Donec in sem cras amet.</p>
+				      </div>
+				    </div>
 				</div>
+				</div>
+				<!-- /third section -->
 			</div>
-			<div class="row clearfix footer">
-				<div class="col-md-4 column">
-					<img alt="140x140" src="http://lorempixel.com/140/140/">
-				</div>
-				<div class="col-md-4 column">
-					<img alt="140x140" src="http://lorempixel.com/140/140/">
-				</div>
-				<div class="col-md-4 column">
-					<img alt="140x140" src="http://lorempixel.com/140/140/">
+			<div id="footer" class="row clearfix footer">
+				<div class="container">
+					<div class="col-md-4 column">
+						<p>SAT - Cordoba - Argentina</p>
+						<p>Home</p>
+						<p>Registrarse</p>
+						<p>Login</p>
+					</div>
+					<div class="col-md-4 column">
+						Copyright todos los derechos reservados
+					</div>
+					<div class="col-md-4 column">
+						<p>Facebook</p>
+						<p>Twitter</p>
+						<p>Google+</p>
+						<p>Instagram</p>
+					</div>
 				</div>
 			</div>
 		</div>
