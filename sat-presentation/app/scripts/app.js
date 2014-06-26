@@ -5,16 +5,13 @@ var SatApp = angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'ui.bootstrap'
   ]);
 
 SatApp.config(function ($routeProvider) {
 
   $routeProvider
-  .when('/login', {
-    templateUrl: '/views/login.html',
-    controller: 'LoginCtrl'
-  })
   .when('/my_teams', {
     templateUrl: '/views/user/my_teams.html',
     controller: 'UserCtrl',
@@ -40,7 +37,8 @@ SatApp.run(function($rootScope, $cookieStore, $route, $window,$location, loginSe
   };
 
   $rootScope.getUserNameLoggedIn = function(){
-    return $cookieStore.get('userName');
+    var userNameCookie = $cookieStore.get('userName');
+    return userNameCookie;
   };
 
   $rootScope.setUserNameLoggedIn = function(_userName){
@@ -64,32 +62,6 @@ SatApp.run(function($rootScope, $cookieStore, $route, $window,$location, loginSe
     // });
   };
 
-  $rootScope.$on('$routeChangeStart', function(angularEvent, next, current) {
-
-    if (!$cookieStore.get('isLoggedIn') && next.secure) {
-      // they are not currently logged in and the page they're trying to get to is a secured page
-      // -> redirect them to the login page, keep track of where they were trying to get to
-      $location.path('/login');
-      $cookieStore.put('postLoginState', {
-        page: next.originalPath
-      });
-    } else if (next.originalPath === '/login' && !$cookieStore.get('postLoginState') && current) {
-      // trying to navigate to the login page, and there is no postLoginState already stored
-      // -> keep track of the current page to navigate back to after a successful login
-      $cookieStore.put('postLoginState', {
-        page: current.originalPath
-      });
-    } else if ($cookieStore.get('postLoginState') && next.originalPath !== '/login') {
-      // trying to navigate somewhere that is not the login page and the postLoginState already exists
-      // -> delete the postLoginState as it is no longer valid
-      var postLoginState = $cookieStore.get('postLoginState');
-      if (next.originalPath !== postLoginState.page) {
-        $cookieStore.remove('postLoginState');
-      }
-    }
-
-    $rootScope.error = null;
-  });
 
 
 });

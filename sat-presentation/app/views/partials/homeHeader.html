@@ -14,8 +14,8 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse-main">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">Registrarse</a></li>
-        <li ng-hide="isLogged" ><a ng-href="#/login">Login</a></li>
+        <li ng-hide="isLogged"><a href="#about">Registrarse</a></li>
+        <li ng-hide="isLogged" ><a ng-click="login()">Login</a></li>
     	<li ><a ng-show="isLogged" ng-click="logout()">Salir</a></li>
         <li><a href="#google_map">Contacto</a></li>
       </ul>

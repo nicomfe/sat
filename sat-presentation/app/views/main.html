@@ -1,9 +1,53 @@
 <div ng-include src="'views/partials/homeHeader.html'"></div> 
 
-<div class="row clearfix">
-		<div class="col-md-14 column">
-			
-			<div id="firstHomeSection" class="home row jumbotron">
+<div class="clearfix">
+		<div>
+			<div id="firstHomeSection" class="jumbotron clearfix " >
+				<div class="col-md-6 column pull-left">
+					<h1>WELCOME TO SAT!</h1>
+					<h2>
+						<p>
+							Take the hassle out of organising your club, team or group, 
+							find people who are interested on playing your same sport, and book your field!
+						</p>
+					</h2>
+				</div>
+				<div class="col-md-6 column pull-right">
+					<form role="form">
+						<h1>LOGIN</h1>
+						<div class="form-group input-group-sm">
+							 <input type="userName" class="form-control" placeholder="Username" id="userName">
+						</div>
+						<div class="form-group input-group-sm">
+							 <input type="passwordLogin" class="form-control"  placeholder="Password" id="passwordLogin">
+						</div>
+						<div class="row clearfix">
+							<div class="column">
+								 <button type="button" class=" btn-lg satButton ">Login</button>
+							</div>
+						</div>
+					</form>
+					<form role="form">
+						<h1>SIGNUP FOR FREE!</h1>
+						<div class="form-group input-group-sm">
+							 <input type="name" class="form-control" placeholder="Name" id="exampleInputEmail1">
+						</div>
+						<div class="form-group input-group-sm">
+							 <input type="email" class="form-control" placeholder="Email" id="exampleInputEmail1">
+						</div>
+						<div class="form-group input-group-sm">
+							 <input type="password" class="form-control"  placeholder="Password" id="exampleInputPassword1">
+						</div>
+						<div class="row clearfix">
+							<div class="column">
+								 <button type="button" class="btn-lg btn-success">OK</button>
+							</div>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+			<div id="secondMainSection" class="home row jumbotron">
 				<h1>
 					OBTENE TURNOS GRATIS, ARMA TU EQUIPO, BUSCA JUGADORES Y MAS!
 				</h1>
@@ -13,27 +57,6 @@
 				<p>
 					<a class="btn btn-primary btn-large" href="#">Registrate GRATIS</a>
 				</p>
-			</div>
-			<div id="secondMainSection" class="row jumbotron clearfix " >
-				<div class="col-md-12 column">
-					<h1>REGISTRARSE ES GRATIS!</h1>
-					<form role="form">
-						<div class="form-group input-group-lg">
-							 <input type="email" class="form-control" placeholder="Email" id="exampleInputEmail1">
-						</div>
-						<div class="form-group input-group-lg">
-							 <input type="password" class="form-control"  placeholder="Contraseña" id="exampleInputPassword1">
-						</div>
-						<div class="form-group input-group-lg">
-							 <input type="password" class="form-control"  placeholder="Repetir Contraseña" id="exampleInputPassword2">
-						</div>
-					</form>
-					<div class="row clearfix">
-						<div class="col-md-12 column">
-							 <button type="button" class="btn btn-lg btn-success btn-block">OK</button>
-						</div>
-					</div>
-				</div>
 			</div>
 			<div id="thirdMainSection"  class="row jumbotron clearfix " >
 				<!-- third section - Services -->

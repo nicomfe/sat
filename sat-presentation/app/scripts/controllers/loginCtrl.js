@@ -1,8 +1,10 @@
 'use strict';
 
-SatApp.controller('LoginCtrl', function($scope, $location, $rootScope, accountFactory, loginService) {
+SatApp.controller('LoginCtrl', function($scope, $location, $modalInstance, $rootScope, accountFactory, loginService) {
 	$scope.activeNav = 'login';
 	$scope.accountFactory = accountFactory;
+	$scope.userName = '';
+	
 	$scope.login = function() {
 		$scope.loginError = false;
 		$scope.loginFailed = false;
@@ -15,10 +17,11 @@ SatApp.controller('LoginCtrl', function($scope, $location, $rootScope, accountFa
 
 		var req = loginService.login($scope.userName, $scope.password);
 		if(req == true){
-			$rootScope.setUserNameLoggedIn($scope.userName);
-			$scope.accountFactory.userName = $scope.userName;
+			var userName = $scope.userName;
+			$rootScope.setUserNameLoggedIn(userName);
+			$scope.accountFactory.userName = userName;
 			$rootScope.login();
-			
+			$modalInstance.close();
 			$location.path('/my_teams');
 		}else{
 			$scope.loginFailed = true;

@@ -3,6 +3,10 @@
     src: url(../fonts/titleFont.TTF);
 }
 
+.container{
+  padding: 0px !important;
+}
+
 body {
 	background: #fff !important;	
 }
@@ -13,12 +17,19 @@ body {
 
 .container{
 	width:100% !important;
-	margin-right: 0px !important;
 	color:white;
-
 }
-h1{
+
+h1
+{
 	font-family: titleFont !important;
+}
+
+h2 p
+{
+  font-family: sans-serif !important;
+  font-size: 30px !important;
+  text-align: left;
 }
 
 .wrapper {	
@@ -131,4 +142,8 @@ h1{
 #footer {
   background: #101010;
 	width:100%;
+}
+
+.satButton{
+  background: #94B8FF;
 }
